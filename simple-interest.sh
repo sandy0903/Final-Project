@@ -1,7 +1,28 @@
-Step 1: Enter the amount of money
-Step 2: Enter number of time (month,year)
+   #!/bin/bash
+   # This script calculates simple interest given principal,
+   # annual rate of interest and time period in years.
 
-Depends on how long and how much you have , the rate interest equivalent to that
- 
-=> Result after calculation
-Show the total of the amount after the time you entered
+   # Do not use this in production. Sample purpose only.
+
+   # Author: Upkar Lidder (IBM)
+   # Additional Authors:
+   # <your GitHub username>
+
+   # Input:
+   # p, principal amount
+   # t, time period in years
+   # r, annual rate of interest
+
+   # Output:
+   # simple interest = p*t*r
+
+   echo "Enter the principal:"
+   read p
+   echo "Enter rate of interest per year:"
+   read r
+   echo "Enter time period in years:"
+   read t
+
+   s=`expr $p \* $t \* $r / 100`
+   echo "The simple interest is: "
+   echo $s
