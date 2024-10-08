@@ -1,3 +1,10 @@
+.home-page > div {
+    justify-content: flex-start;
+    width:100%;
+}
+.home-page .right-section{
+    width:80%;
+}
 .right-section {
     display: flex;
     width:100%;

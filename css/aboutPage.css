@@ -1,3 +1,10 @@
+.home-page > div {
+    justify-content: flex-start;
+    width:100%;
+}
+.home-page .right-section{
+    width:80%;
+}
 .right-section {
     margin-right:2rem;
 }
@@ -17,11 +24,13 @@
     justify-content: space-around;
     align-items: top;
     margin-left:2rem;
+    width:100%;
 }
 .employees div{
     margin:0 2rem;
     padding:15px;
     color:white;
+    width:25%;
     background-color:rgba(0,0,0,0.6);
     border-radius: 10px;
    
