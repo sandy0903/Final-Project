@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+ul{
+    padding: 0;
+    margin:0;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+.btn{
+    padding:8px 13px;
+    background-color:rgb(15, 75, 67);
+    color:white;
+    border-radius:5px;
+    border:none;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+/* header section */
+.header{
+    background-color: rgba(0, 0, 0,0.5);
+    min-height: 55px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 55px;
+    padding:0 20px;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar ul li{
+    padding:0 20px;
+    font-size:1.4rem;
+    
+}
+.navbar ul li a{
+    color:white;
+}
+.navbar ul li a:hover{
+    text-decoration: underline;
+}
+
+.btnGroup{
+    background-color:white;
+    border:1px solid white;
+    border-radius:20px;
+    padding:4px 10px ;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btnGroup button{
+    margin:0 10px;
+}
+.btnGroup input{
+    border:none;
+    padding:8px 13px;
+    width:250px;
+    outline: none;
+}
+
+/* container section */
+
+.container{
+    width:100%;
+    height:100vh;
+    background-image: url("../img/cityBg.avif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 60px 150px 550px rgb(63, 63, 15);
+}
+
+/* home page */
+.home-page{
+    height:90%;
+}
+.home-page > div {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100%;
+}
+.home-page .left-section{
+    margin:0 20px;
+    display: flex;
+    height:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    padding-top:3.5rem;
+
+}
+.verticalLine{
+    height:130px;
+    width:1px;
+    background-color: white;
+    margin-bottom:rem;
+}
+.socialIcon{
+    margin-top:4rem;
+    display:flex;
+    flex-direction: column;
+}
+.socialIcon svg{
+    margin:10px 0;
+    fill:white;
+    width:20px;
+    height:20px;
+}
+/* home page right section */
+.home-page .right-section{
+    width:60%;
+    position: relative;
+    left:0;
+    right:0;
+}
+.home-page .right-section h1 {
+    font-weight: 900;
+    font-size:3rem;
+    text-transform: uppercase;
+    color:white;
+    margin:6px 0;
+}
+.right-section p{
+    width:100%;
+    color:white;
+    line-height: 1.2rem;
+    margin:20px 0;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+.right-section .btn {
+    font-size:1.2rem;
+    padding:6px 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/* list searched destinations */
+.searchedDestination{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right:2rem;
+    height: 100%;
+    width:70%;
+}
+.headerLine{
+    width:70%;
+    margin:0 auto;
+    height:15px;
+    border-radius:2px;
+    background-color:rgb(15, 75, 67);
+}
+.list{
+    width:70%;
+    height:95%;
+    overflow-y: scroll;
+}
+.list::-webkit-scrollbar{
+    display: none;
+}
+.list-item{
+    background-color:white;
+    margin:10px 0;
+    border-radius: 20px ;
+
+}
+.list-item img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 20px 20px 0 0;
+}
+.list-item .caption{
+    background-color:white;
+    padding:10px 15px;
+    border-radius: 0 0 20px 20px ;
+}
+.list-item .caption p {
+    color:#ccc;
+    font-weight: 100;
+    font-size:1rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin:10px 0;
+}

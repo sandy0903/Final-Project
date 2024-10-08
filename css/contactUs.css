@@ -1,0 +1,35 @@
+.right-section {
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-section form {
+    width:50%;
+    margin-right:2rem;;
+    background-color: rgba(0,0,0,0.4);
+    color:white;
+    padding:20px;
+}
+.right-section form div {
+    margin:20px 0 ;
+}
+
+.right-section form input,textarea{
+    width:100%;
+    border:1px solid white;
+    background-color: transparent;
+    padding:10px;
+    color:white;
+}
+form input::placeholder,
+form textarea::placeholder{
+    color:white;
+}
+form .btn.submitBtn{
+    margin:auto;
+    font-size: 1rem;
+    text-transform: capitalize;
+    width:auto;
+    width:100%;
+}
